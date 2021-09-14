@@ -1,6 +1,16 @@
-const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
-const renderer = new THREE.WebGLRenderer({ antialias: true })
+// This serves index.html to localhost (which contains actual stuff)
 
-renderer.setSize( window.innerWidth, window.innerHeight )
-document.body.appendChild( renderer.domElement )
+var express = require('express'),
+    path = require('path'),
+    app = express();
+
+app.set('port', (process.env.PORT || 8080));
+
+app.use(express.static('public'));
+
+app.listen(app.get('port'), function(err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('Running on port: ' + app.get('port')); }
+});
