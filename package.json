@@ -1,18 +1,22 @@
 {
   "name": "three-js-beginner",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:adludo/threejs_tute.git"
+    "url": "git+ssh://git@github.com/adludo/threejs_tute.git"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/adludo/threejs_tute/issues"
+  },
+  "homepage": "https://github.com/adludo/threejs_tute#readme",
+  "description": ""
 }
