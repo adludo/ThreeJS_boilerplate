@@ -66,6 +66,8 @@ console.log("testing");
 // INITIALISE RENDERER
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
+
+// ADD TO HTML
 document.body.appendChild( renderer.domElement )
 
 renderer.render(scene, camera);
