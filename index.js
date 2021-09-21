@@ -1,4 +1,4 @@
-// This serves index.html to localhost (which contains actual stuff)
+// This serves index.html (which contains actual stuff) to localhost 
 
 var express = require('express'),
     path = require('path'),
