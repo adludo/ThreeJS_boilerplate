@@ -55,7 +55,7 @@ var animate = function () {
 	renderer.render(scene, camera);
 };
 
-var camvector = new THREE.Vector3()
+const camvector = new THREE.Vector3()
 camera.getWorldDirection( camvector );
 console.log(camvector)
 
