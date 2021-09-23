@@ -7,8 +7,6 @@ const mesh = new THREE.Mesh( geometry, material );
 mesh.position.set(0, 0, 0);
 scene.add( mesh );
 
-
-
 // Add lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
 scene.add(ambientLight); 
